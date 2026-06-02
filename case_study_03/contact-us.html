@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact Us - University of LANZ'S</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <style>
+            .contact-container {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 40px;
+                margin-top: 30px;
+            }
+            
+            .contact-info {
+                background-color: #f9f9f9;
+                padding: 30px;
+                border-radius: 8px;
+                border-left: 4px solid #006633;
+            }
+            
+            .contact-info h3 {
+                color: #006633;
+                margin-bottom: 20px;
+            }
+            
+            .contact-item {
+                margin-bottom: 20px;
+            }
+            
+            .contact-item strong {
+                color: #006633;
+                display: block;
+                margin-bottom: 5px;
+            }
+            
+            .contact-item p {
+                color: #555;
+                margin: 0;
+            }
+            
+            .contact-form {
+                background-color: #f9f9f9;
+                padding: 30px;
+                border-radius: 8px;
+                border-left: 4px solid #FFD700;
+            }
+            
+            .contact-form h3 {
+                color: #006633;
+                margin-bottom: 20px;
+            }
+            
+            .form-group {
+                margin-bottom: 20px;
+            }
+            
+            .form-group label {
+                display: block;
+                color: #006633;
+                font-weight: bold;
+                margin-bottom: 8px;
+            }
+            
+            .form-group input,
+            .form-group textarea {
+                width: 100%;
+                padding: 12px;
+                border: 2px solid #ddd;
+                border-radius: 5px;
+                font-size: 1em;
+                font-family: inherit;
+                transition: border-color 0.3s ease;
+            }
+            
+            .form-group input:focus,
+            .form-group textarea:focus {
+                outline: none;
+                border-color: #006633;
+            }
+            
+            .submit-btn {
+                background-color: #006633;
+                color: #FFD700;
+                padding: 15px 40px;
+                border: none;
+                border-radius: 5px;
+                font-size: 1em;
+                font-weight: bold;
+                cursor: pointer;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                transition: all 0.3s ease;
+            }
+            
+            .submit-btn:hover {
+                background-color: #FFD700;
+                color: #006633;
+                transform: translateY(-2px);
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            }
+            
+            .map-placeholder {
+                width: 100%;
+                height: 300px;
+                background: linear-gradient(135deg, #006633 0%, #004d26 100%);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                font-size: 1.2em;
+                font-weight: bold;
+                border-radius: 8px;
+                margin-top: 20px;
+            }
+            
+            @media screen and (max-width: 768px) {
+                .contact-container {
+                    grid-template-columns: 1fr;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div class="header">
+                <h1>University of LANZ'S</h1>
+            </div>
+
+            <div class="main-navigation">
+                <a href="index.html" class="nav-button">Home</a>
+                <a href="about-us.html" class="nav-button">About Us</a>
+                <a href="mission-vision.html" class="nav-button">Mission and Vision</a>
+                <a href="gallery.html" class="nav-button">Gallery</a>
+                <a href="contact-us.html" class="nav-button active">Contact Us</a>
+            </div>
+
+            <div class="content">
+                <h2>Contact Us</h2>
+                <p class="highlight">Get in touch with University of LANZ'S</p>
+                <p>We'd love to hear from you! Reach out to us for inquiries, admissions, or general information.</p>
+
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <h3>Contact Information</h3>
+                        
+                        <div class="contact-item">
+                            <strong>📍 Address:</strong>
+                            <p>Brgy. Villamonte, Bacolod City<br>Negros Occidental, Philippines 6100</p>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <strong>📞 Telephone:</strong>
+                            <p>(63) 432-1234</p>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <strong>📱 Mobile:</strong>
+                            <p>+63 910 540 6878</p>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <strong>📧 Email:</strong>
+                            <p>info@universityoflanz.edu.ph<br>admissions@universityoflanz.edu.ph</p>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <strong>🕒 Office Hours:</strong>
+                            <p>Monday - Friday: 8:00 AM - 5:00 PM<br>Saturday: 8:00 AM - 12:00 NN</p>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <strong>🌐 Social Media:</strong>
+                            <p>Facebook: @UniversityOfLANZS<br>Twitter: @UnivOfLANZS</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-form">
+                        <h3>Send Us a Message</h3>
+                        <form action="#" method="post">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject *</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" rows="6" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="submit-btn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer">
+                <p>&copy; 2026 University of LANZ'S</p>
+                <p>Inspired by the Lasallian tradition of excellence</p>
+            </div>
+        </div>
+    </body>
+</html>
